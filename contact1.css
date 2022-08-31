@@ -1,0 +1,356 @@
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+  
+                                                                                                                                                                                  
+ }
+
+ .content{
+background-image: url('backgr.jpg');                                                                                           
+ width:100%;
+height:100%;
+
+/* background-size:100% 100%; */
+position:relative;
+background-repeat:no-repeat;
+display: grid;
+grid-template-rows: 0.4fr 3fr;
+/* justify-content: center; */
+align-items: center;
+background-size: cover;
+
+
+ }
+
+ h2 :hover {
+   
+   background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #446672 50%,
+      #000 50%
+    );
+
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.8s ease-in-out;
+
+ }
+ .head{
+
+   position: relative;
+   min-height: 30vh;
+   padding: 100px  50px;
+   display: grid;
+   
+   grid-template-rows: 2fr 3fr;
+justify-content:center;
+align-items: center;
+/* max-width: 800px; */
+text-align: center;}
+
+.content .head h2{
+   font-size: 36px;
+   /* font-weight: 0; */
+   color:rgb(33, 62, 65);
+}
+
+
+
+.content .head p{
+   font-size: 20px;
+   font-weight: 400;
+   color:rgb(19, 42, 44);
+}
+
+.container{
+
+                                                                                               
+   display:flex;
+
+   width: 100%;
+
+
+}
+
+
+
+
+.left-s{
+    width: 100%;  
+   display: flex;
+ flex-direction: column;
+ justify-content:center ;
+ padding-left: 50px;
+
+}
+.left-s .info{
+
+position: relative;
+padding: 50px 0;
+display: flex;
+
+}
+
+.left-s .icon{
+
+   min-width: 40px;
+   height:40px;
+   background-color:rgb(226, 226, 226);
+   display: flex;
+   color: rgb(60, 81, 95);
+   justify-content: center;
+   align-items: center;
+   border-radius:50%;
+   font-size: 20px;
+}
+
+.left-s .info .text1  h3 {
+
+  margin-left: 20px;
+  display: flex;
+flex-direction: column;
+}
+
+
+h3:hover{
+
+      background-image: linear-gradient(
+        to right,
+        #54b3d6,
+        #446672 50%,
+        #000 50%
+      );
+
+      background-size: 200% 100%;
+      background-position: -100%;
+      -webkit-background-clip:text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.8s ease-in-out;
+ 
+   
+}
+.left-s .info .text p{
+padding: 80px;
+   color:rgb(245, 219, 219);
+    display: flex;
+ flex-direction: column;
+ }
+ 
+.right-s{
+   width: 100%;
+   padding: 50px;
+   background-color: transparent;
+}
+
+
+
+
+
+.form{
+ width:100%;
+ max-width:600px;    
+ height: min-content ;
+                                                                                      
+}
+
+.input-gr{
+margin-bottom: 30px;
+position: relative;
+
+}
+input,textarea{
+width:100%;  
+padding:12px; 
+outline: 0;
+/* border-bottom-left-radius: 2%;
+border-top-right-radius: 2%;
+border-top-left-radius: 2%;
+border-bottom-right-radius: 2%; */
+border: 1px solid rgb(51, 45, 45);
+color:rgb(0, 0, 0);
+background: transparent;      
+font-size:15px;                                                                                   
+}
+
+label{
+     height: 100%;
+     position:absolute;
+      left: 0;
+      top:0; 
+    
+     color:rgb(96, 101, 116);
+     cursor:text ;
+    transition: 0.2s;                                                         
+}
+
+button{
+     
+   padding:10px 0;
+   color: rgb(20, 48, 100);
+   outline: none;
+   background: transparent;
+   border: 1px solid rgba(66,52,52);
+   width: 100%;
+   cursor: pointer;                                                                                                 
+                                                                                                    
+}
+                                
+input:focus~label,
+input:valid~label
+textarea:focus~label,
+textarea:focus~label
+{  top:-20px;
+   font-size: 20px;                                                                                           
+
+}
+.row{
+                
+  display: flex;
+  align-items: center;
+  justify-content: space-between;                                                                                                  
+}
+
+.row .input-gr{
+
+flex-basis: 48%;
+}
+
+
+
+
+.btn{
+
+   padding: 10px 60px;
+   background: #fff;
+   border : 0;
+   outline:none;
+   cursor: pointer;
+   font-size: 22px;
+   font-weight: bold;
+   border-radius:30px;
+}
+
+.popup{
+
+   width: 400px;
+   background: #fff;
+   border-radius: 10px;
+   position: absolute;
+   top: 0%;
+   left: 50%;
+   transform: translate(-50% ,-50%) scale(0.1);     
+   text-align: center;
+   padding: 0 20px 20px ;
+   color: #333;
+   visibility: hidden;
+   transition: transform 0.5s, top  0.5s;
+
+}
+
+.open-popup{
+
+   visibility: visible;
+   top: 50%;
+  transform:translate(-100% ,45%) scale(0.9);
+}     
+
+
+
+.popup img{
+
+  width: 80px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0.2) ;
+   
+
+}
+
+.popup h2{
+   font-size: 38px;
+   font-weight: 500;
+   margin:30px 0 10px;
+
+}
+
+.popup button{
+
+    width: 100%;
+   margin-top:20px;
+    /* padding: 20px ;  */
+    background: #2b4a66;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0.2);
+
+}
+
+
+.footer{
+   text-align: center;
+   font-size: larger;
+
+}
+
+
+ @media all and  (max-width: 600px)
+  {
+   .container{
+      width:100%;
+      display: flex;
+      flex-direction:column;
+    
+   }                                                                                                                                                                     
+       
+
+   .head{
+
+
+      position: relative;
+      display: contents;
+      text-align: center;
+      justify-content: space-evenly;
+      position: relative;
+      padding-bottom: 20px;
+
+  }
+
+   .left-s{
+      margin-top: 30px;
+   }
+
+   .content .head h2{
+      padding-bottom: 20px;
+   }
+
+   .right-s {
+   
+      padding: 20px;
+      
+  }
+  .formm{
+   display: grid;
+   grid-template-rows: 1fr 1fr 2fr 2fr;
+   align-items: baseline;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50% ,140%) scale(0.85);
+}
+  
+  }

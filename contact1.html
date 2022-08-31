@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-08">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"   href="contact1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,400;1,100&display=swap" rel="stylesheet">
+  <title >CONTACT US</title>
+  <link rel="icon" type="image/x-icon" href="222.jpg">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body>
+<div class="content">
+   <div class="head">
+    <h2>Contact Us</h2> 
+   
+<p>Didn't find what you're looking for? We'd love to hear from you. Fill out the form below and we'll get back to you soon...</br>
+  Your email isn't going to the inbox abyss, never to be seen or heard from again. At The Horse, we provide the exceptional service we'd want to experience ourselves!
+  </p>
+
+</div>                                                                                                                                                                                               
+   <div class="container">
+<div class="left-s">
+ 
+     <div class="info">
+       <div class="icon"><i class="fa fa-map-marker " aria-hidden="true"></i></div>
+       
+       <div class="text1"><h3>ADDRESS</h3>  
+
+         <p style="padding-left: 20px;">Shop 24, Cairns Central Shopping Centre, 1-21 McLeod Street<br>
+          Cairns, 4870<br>
+          Epping  </p> 
+        </div>                                                                                         
+    </div>  
+    <div class="info">
+      <!-- <i class="fa fa-map-phone fa-2x" aria-hidden="true"></i>                   -->
+       
+      <div class="icon"><i class="fa fa-phone "></i></div>
+       <div class="text1">
+        <h3>PHONE</h3>  
+         <p style="padding-left: 20px;">02 4211 4370</p>  
+        </div>                                                                                        
+</div>
+
+   <div class="info">
+    <div class="icon">  <i class="fa fa-envelope "></i> </div> 
+       <div class="text1"> 
+        <h3>E-mail</h3>
+        <p style="padding-left: 20px;">thehorse.info@gmail.com</p>
+      </div>
+</div>
+
+</div>
+
+<div class="right-s">
+ 
+<form onsubmit="Popup(); event.preventDefault()">
+<div class="formm">
+ <div class="row">                                                                                                 
+ <div class="input-gr">                                                                                            
+      <input type="text" id="name" required>
+      <label for="name"><i class="fa-solid fa-user"></i>Your Name</label>   
+      <span id="warning"></span>
+                                                                                     
+</div> 
+ <div class="input-gr">                                                                                            
+      <input type="text" id="number" required>
+      <label for="number"><i class="fa-solid fa-mobile-screen-button"></i>Phone No.</label> 
+      <span id="warning1"></span>
+   
+</div> 
+</div>
+
+ <div class="input-gr">                                                                                            
+      <input type="email" id="email" required >
+      <label for="email"><i class="fa-solid fa-at"></i>Your Email</label>  
+      <span id="warning2"></span>
+                                                                                       
+</div> 
+ <div class="input-gr" >                                                                                            
+      <textarea id="mssg" rows="6" required ></textarea>
+      <label for="mssg"><i class="fa-solid fa-thought-bubble"></i>Your Message</label>
+      <span id="warning3"></span>
+                                                                                          
+</div> 
+
+<button type="submit"  class="btn" >Submit</button>
+</div>
+<div class="popup" id="popup">
+     
+<img src="tick.2.jpg">
+    <h2>Thank You !</h2>
+    <p>We appriciate you contacting us...</p>
+    
+ 
+    <button type="button" onclick="closePopup()" >OK</button>
+
+</div>
+</form>
+</div>
+
+
+</div>
+
+  <div class="footer"  style="background-color: transparent">
+    ©
+    <a style="text-decoration: none;color: rgb(16, 42, 58); font-weight: bold;"
+      
+      href="https://mdbootstrap.com/"
+      >THE | HORSE</a
+    >
+  </div>
+
+
+
+<script>
+
+// alert("debug");
+   
+function Popup(){
+
+
+  let popup = document.getElementById("popup");
+
+
+
+  if( document.getElementById("name").value != '' && document.getElementById("number").value != '' && document.getElementById("email").value != ''&& document.getElementById("mssg").value != '')
+{
+  
+
+  // function openPopup(){
+  
+      popup.classList.add("open-popup");
+     
+  // }
+  
+  
+
+
+}
+}
+function closePopup(){
+  
+   
+
+  popup.classList.remove("open-popup");
+  }
+  
+</script>
+  
+  
+
+
+  </body>
+</html>
